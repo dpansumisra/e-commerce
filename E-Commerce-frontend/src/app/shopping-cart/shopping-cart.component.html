@@ -1,0 +1,30 @@
+<p>shopping-cart works!</p>
+<div class="shopping-cart">
+    <h2>Shopping Cart</h2>
+  
+    <div *ngFor="let product of products">
+      <div class="product-item">
+        <span>{{ product.productName }}</span>
+        <span>Price: {{ product.price | currency }}</span>
+        <input type="number" [(ngModel)]="product.quantity" (ngModelChange)="updateQuantity(product)" min="1" />
+        <button (click)="addToCart(product)">Add to Cart</button>
+      </div>
+    </div>
+  
+    <h3>Cart Summary</h3>
+    <div *ngFor="let item of cartItems">
+      <span>{{ item.product.productName }} ({{ item.quantity }})</span>
+      <button (click)="removeFromCart(item)">Remove</button>
+    </div>
+  
+    <div>
+      <p>Total Value: {{ getTotalValue() | currency }}</p>
+      
+      <label for="discountCode">Discount Code:</label>
+      <input type="text" [(ngModel)]="discountCode" />
+      <button (click)="applyDiscount()">Apply Discount</button>
+      
+      <p *ngIf="discountApplied">Total Value after Discount: {{ getTotalValueAfterDiscount() | currency }}</p>
+    </div>
+  </div>
+  
