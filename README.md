@@ -172,5 +172,10 @@ If you run into issues while setting up solution, try the following:
 > If you have any questions or need clarification, please reach out to the person who shared this assignment with you.
 
 > Include Snapshots of the Application Running in the README.md file of your Repository and any additional information you would like to share.
+![image](https://github.com/user-attachments/assets/3e678c9f-719a-4a79-a540-be1dfbfe7bb7)
+![image](https://github.com/user-attachments/assets/1c1d76b7-1a68-4281-a14b-58d50e309199)
+> ![image](https://github.com/user-attachments/assets/58cbf3b9-d8a2-4887-adac-54fb1d407dcc)
+
+
 
 > Good Luck! 🚀
